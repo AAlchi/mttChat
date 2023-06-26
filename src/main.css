@@ -1,0 +1,249 @@
+body {
+  background-color: rgb(71, 68, 68);
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.signup {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(144, 140, 140);
+  position: absolute;
+  top: 0;
+  padding: 10px;
+}
+
+.signup > img {
+  width: 50vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 1;
+  background-color: fixed;
+  margin: -10px;
+  padding: -10px;
+}
+
+.signupdiv {
+  width: 80%;
+  max-width: 600px;
+  min-width: 200px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+
+.signupdiv > input {
+  width: 50%;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  padding-left: 20px;
+}
+
+.signupdiv > button {
+  width: 50%;
+  border: none;
+  height: 35px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 80%;
+}
+
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  background-color: rgb(43, 41, 41);
+  padding: 20px;
+  gap: 20px;
+  height: 100vh;
+}
+
+.outline {
+  border: 1px solid black;
+}
+
+.chats {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: scroll;
+  height: 30%;
+}
+
+.sideBar > button {
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.chatFirst {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.chatFirst:hover {
+  background-color: rgb(53, 52, 52);
+  cursor: pointer;
+}
+
+.chatFirst > h2 {
+  font-size: 18px;
+}
+
+.profile {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.chatter {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.chatroom {
+  width: 100%;
+}
+
+#imageView {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background-color: rgb(9, 9, 9, 0.9);
+  width: 100%;
+  height: 100vh;
+}
+
+#imageView > img {
+  max-height: 100vh;
+  max-width: 50vw;
+  min-width: 200px;
+  border: 1px solid black;
+}
+
+.chatting {
+  width: 100%;
+  height: calc(100vh - 200px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding-top: 20px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.flexchat {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.one {
+  background-color: rgb(126, 134, 126);
+  border-radius: 30px 0px 30px 30px;
+  min-width: 80%;
+  align-items: flex-end;
+}
+
+.two {
+  background-color: rgb(73, 91, 107);
+  border-radius: 0px 30px 30px 30px;
+  min-width: 80%;
+}
+
+.homepage {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.imagetest {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 1px solid black;
+}
+
+.imagetest:hover {
+  opacity: 60%;
+  cursor: pointer;
+}
+
+.phone {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.phone > div {
+  background-color: white;
+  width: 90%;
+  height: 10px;
+  border-radius: 20px;
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  width: 70%;
+  gap: 5px;
+}
+
+@media (max-width: 700px) {
+  .signup > img {
+    display: none;
+  }
+
+  .sideBar {
+    position: absolute;
+    width: 70%;
+    display: none;
+  }
+
+  .phone {
+    display: flex;
+  }
+  .inputs {
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+@media (max-height: 750px) {
+}
